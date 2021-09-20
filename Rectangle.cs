@@ -4,7 +4,8 @@
     {
         private double length;
         private double width;
-
+        private double _length;
+        private double _width;
         public Rectangle(double length, double width)
         {
             this.length = length;
@@ -31,22 +32,22 @@
 
         public void SetLength(double len)
         {
-            length = len;
+            _length = len;
         }
 
         public void SetWidth(double wid)
         {
-            this.width = wid;
+           _width = wid;
         }
 
         public double GetWidth()
         {
-            return this.width;
+            return _width;
         }
 
         public double GetLength()
         {
-            return this.length;
+            return _length;
         }
     }
 }

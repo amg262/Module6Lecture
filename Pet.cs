@@ -4,7 +4,8 @@
     {
         private int age;
         private string petName;
-
+        private int _age;
+        private string _petName;
         public Pet(string petName, int age)
         {
             this.petName = petName;
@@ -25,9 +26,14 @@
         }
 
 
+        /*
+         * These getters amd setters need to use the " _variabel_name " fields
+         * with the underscore. Properties will hide the private variables all together
+         * this class correctly represents the getters, setters but NOT properties
+         */
         public void SetPetName(string petName)
         {
-            this.petName = petName;
+            _petName = petName;
         }
 
         public string GetPetName()
@@ -42,7 +48,7 @@
 
         public void SetAge(int age)
         {
-            this.age = age;
+            _age = age;
         }
     }
 }
