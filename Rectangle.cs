@@ -15,6 +15,16 @@
         }
 
         /*
+         * Overloaded constructor that can be created and default values
+         */
+        public Rectangle()
+        {
+            length = 1;
+            width = 1;
+        }
+
+
+        /*
          * Properties
          */
         public double Length

@@ -9,7 +9,23 @@ private double _length;
 private double _width;
 ```
 
+### 2 constructors for seperate business logic
+```c#
+public Rectangle(double length, double width)
+    {
+        this.length = length;
+        this.width = width;
+    }
 
+    /*
+     * Overloaded constructor that can be created and default values
+     */
+    public Rectangle()
+    {
+        length = 1;
+        width = 1;
+    }
+```
 
 
 ```c#
