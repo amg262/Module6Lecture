@@ -21,7 +21,14 @@ namespace Module6Lecture
             Rectangle kitchen = new Rectangle(10, 10);
             kitchen.Length = 5;
             kitchen.Width = 4;
-            Console.WriteLine($"{kitchen.Length * kitchen.Width}");
+            //Console.WriteLine($"{kitchen.Length * kitchen.Width}");
+
+
+            Pet pet = new Pet("Odie", 10);
+            pet.PetName = "Rodie Puppy";
+            pet.Age = 5;
+
+            Console.WriteLine($"Name: {pet.PetName}  Age: {pet.Age}");
 
         }
     }
