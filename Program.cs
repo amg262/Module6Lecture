@@ -13,6 +13,20 @@ namespace Module6Lecture
             names.Add(name);
         }
 
+        static void Apartment()
+        {
+            List<Rectangle> rooms = new List<Rectangle>();
+            Rectangle study = new Rectangle(20, 3);
+            Rectangle bath = new Rectangle(10, 10);
+
+            rooms.Add(study);
+            rooms.Add(bath);
+            foreach (var room in rooms)
+            {
+                Console.WriteLine($"Room: {room.GetArea()}");
+            }
+        }
+
         static void Main(string[] args)
         {
             //Program program = new Program();
@@ -46,6 +60,9 @@ namespace Module6Lecture
             Console.WriteLine($"Name: {pet.GetPetName()}  Age: {pet.GetPetName()}");
 
             Console.WriteLine($" Print -  {pet.Print()}");
+            
+            Apartment();
+            
         }
     }
 }
