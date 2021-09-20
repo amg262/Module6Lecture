@@ -13,13 +13,16 @@ namespace Module6Lecture
             names.Add(name);
         }
 
-        static void Main1(string[] args)
+        static void Main(string[] args)
         {
             //Program program = new Program();
             //program.ExampleOne();
             
             Rectangle kitchen = new Rectangle(10, 10);
-                        
+            kitchen.Length = 5;
+            kitchen.Width = 4;
+            Console.WriteLine($"{kitchen.Length * kitchen.Width}");
+
         }
     }
 }
