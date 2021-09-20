@@ -11,6 +11,7 @@
             this.age = age;
         }
 
+
         public string PetName
         {
             get => petName;
@@ -22,6 +23,26 @@
             get => age;
             set => age = value;
         }
-        
+
+
+        public void SetPetName(string petName)
+        {
+            this.petName = petName;
+        }
+
+        public string GetPetName()
+        {
+            return this.petName;
+        }
+
+        public int GetAge()
+        {
+            return this.age;
+        }
+
+        public void SetAge(int age)
+        {
+            this.age = age;
+        }
     }
 }

@@ -11,11 +11,6 @@
             this.width = width;
         }
 
-        public void SetLength(double len)
-        {
-            length = len;
-        }
-        
         /*
          * Properties
          */
@@ -32,6 +27,26 @@
         {
             get => width;
             set => width = value;
+        }
+
+        public void SetLength(double len)
+        {
+            length = len;
+        }
+
+        public void SetWidth(double wid)
+        {
+            this.width = wid;
+        }
+
+        public double GetWidth()
+        {
+            return this.width;
+        }
+
+        public double GetLength()
+        {
+            return this.length;
         }
     }
 }

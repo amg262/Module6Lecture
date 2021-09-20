@@ -23,12 +23,16 @@ namespace Module6Lecture
             kitchen.Width = 4;
             //Console.WriteLine($"{kitchen.Length * kitchen.Width}");
 
+            Console.WriteLine($"{kitchen.GetWidth()} Len: {kitchen.GetLength()}");
 
             Pet pet = new Pet("Odie", 10);
             pet.PetName = "Rodie Puppy";
             pet.Age = 5;
+            pet.SetAge(6);
+            pet.SetPetName("bowzah");
 
-            Console.WriteLine($"Name: {pet.PetName}  Age: {pet.Age}");
+            //Console.WriteLine($"Name: {pet.PetName}  Age: {pet.Age}");
+            Console.WriteLine($"Name: {pet.GetPetName()}  Age: {pet.GetPetName()}");
 
         }
     }
