@@ -2,10 +2,12 @@
 {
     public class Rectangle
     {
-        private double length;
-        private double width;
+        private double _area;
         private double _length;
         private double _width;
+        private double length;
+        private double width;
+
         public Rectangle(double length, double width)
         {
             this.length = length;
@@ -37,7 +39,17 @@
 
         public void SetWidth(double wid)
         {
-           _width = wid;
+            _width = wid;
+        }
+
+        public void SetArea()
+        {
+            _area = length * width;
+        }
+
+        public double GetArea()
+        {
+            return _area;
         }
 
         public double GetWidth()

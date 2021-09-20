@@ -17,12 +17,18 @@ namespace Module6Lecture
         {
             //Program program = new Program();
             //program.ExampleOne();
-            
             Rectangle kitchen = new Rectangle(10, 10);
             kitchen.Length = 5;
             kitchen.Width = 4;
             //Console.WriteLine($"{kitchen.Length * kitchen.Width}");
-
+            kitchen.SetArea();
+            kitchen.GetArea();
+            /*
+             * Area field will create stale data because its just a calculation based entirely
+             * only on other fields. Issues with incorrect area values when setter getter for that
+             *
+             * Always calculate on fly with existing fields, have GetArea() method for that calc.
+             */
             Console.WriteLine($"{kitchen.GetWidth()} Len: {kitchen.GetLength()}");
 
             Pet pet = new Pet("Odie", 10);
@@ -30,10 +36,8 @@ namespace Module6Lecture
             pet.Age = 5;
             pet.SetAge(6);
             pet.SetPetName("bowzah");
-
             //Console.WriteLine($"Name: {pet.PetName}  Age: {pet.Age}");
             Console.WriteLine($"Name: {pet.GetPetName()}  Age: {pet.GetPetName()}");
-
         }
     }
 }
