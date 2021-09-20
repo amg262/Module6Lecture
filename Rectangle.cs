@@ -67,5 +67,10 @@
         {
             return _length;
         }
+
+        public string PrintRectangle()
+        {
+            return $"{length} * {width}";
+        }
     }
 }

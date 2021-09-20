@@ -14,6 +14,10 @@
         }
 
 
+        
+        /*
+         * propertites
+         */
         public string PetName
         {
             get => petName;
@@ -50,6 +54,11 @@
         public void SetAge(int age)
         {
             _age = age;
+        }
+
+        public string Print()
+        {
+            return $"{_petName} is {_age} years";
         }
     }
 }

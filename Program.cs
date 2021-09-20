@@ -30,6 +30,8 @@ namespace Module6Lecture
              */
             Console.WriteLine($"{kitchen.GetWidth()} Len: {kitchen.GetLength()}");
 
+            Console.WriteLine($"Shoe -  {kitchen.PrintRectangle()}");
+            
 
 
             Rectangle bedroom = new Rectangle();
@@ -42,6 +44,8 @@ namespace Module6Lecture
             pet.SetPetName("bowzah");
             //Console.WriteLine($"Name: {pet.PetName}  Age: {pet.Age}");
             Console.WriteLine($"Name: {pet.GetPetName()}  Age: {pet.GetPetName()}");
+
+            Console.WriteLine($" Print -  {pet.Print()}");
         }
     }
 }
