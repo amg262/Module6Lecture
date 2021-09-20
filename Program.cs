@@ -21,7 +21,6 @@ namespace Module6Lecture
             kitchen.Length = 5;
             kitchen.Width = 4;
             //Console.WriteLine($"{kitchen.Length * kitchen.Width}");
-            kitchen.SetArea();
             kitchen.GetArea();
             /*
              * Area field will create stale data because its just a calculation based entirely
@@ -31,6 +30,11 @@ namespace Module6Lecture
              */
             Console.WriteLine($"{kitchen.GetWidth()} Len: {kitchen.GetLength()}");
 
+
+
+            Rectangle bedroom = new Rectangle();
+            Console.WriteLine($"Len:  {bedroom.GetLength()} *  {bedroom.GetWidth()} = {bedroom.GetArea()}");
+            
             Pet pet = new Pet("Odie", 10);
             pet.PetName = "Rodie Puppy";
             pet.Age = 5;

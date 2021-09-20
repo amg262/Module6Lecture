@@ -19,8 +19,8 @@
          */
         public Rectangle()
         {
-            length = 1;
-            width = 1;
+            _length = 1;
+            _width = 1;
         }
 
 
@@ -52,14 +52,10 @@
             _width = wid;
         }
 
-        public void SetArea()
-        {
-            _area = length * width;
-        }
 
         public double GetArea()
         {
-            return _area;
+            return _length * _width;
         }
 
         public double GetWidth()
